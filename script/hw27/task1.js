@@ -12,7 +12,7 @@ function getPalindrome (num) {
         if (num === getReverseNumber(num)) {
             return {
                 num,
-                steps: steps,
+                steps,
             };
         } else {
             steps++;
@@ -21,10 +21,10 @@ function getPalindrome (num) {
         }
 
     }
-    
+
     return sumUntilPalindrome(num);
 }
 
-const result = getPalindrome(96);
+const result = getPalindrome(3412);
 console.log(result);
 
